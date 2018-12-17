@@ -8,6 +8,8 @@ Required info:
 1. Objectives of the session
 1. Target audience
 
+Information for BioSb:
+
 1. Denise Slenter, Marvin Martens, Egon Willighagen
 1. Title: SPARQLing Biology; a beginners course. Description: More biological databases are being offered in the socalled Resource Description Framework (RDF) format, which is a flexible way of sharing data in a machine readable manner. SPARQL is a (semantic) query language for these databases, allowing to. 
 1. During this tutorial, the basics of RDF and SPARQL will be explained in a lecture. Later, a handson session is planned with some biological examples from the [Wikidata SPARQL website](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples). Two key examples which will be discussed, are: ["Which variant of which gene predicts a positive prognosis in colorectal cancer"](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer) and ["Find drugs for cancers that target genes related to cell proliferation"](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Find_drugs_for_cancers_that_target_genes_related_to_cell_proliferation). These examples can be modified during the handon session, to allow for direct implementation for the field of interest of the participants.
