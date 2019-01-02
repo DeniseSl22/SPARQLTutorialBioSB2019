@@ -36,5 +36,3 @@ Information for organisers:
 1.Equipment Needed (basic AV will be provided: screen, projector, microphones, etc. If attendees need to bring a laptop to participate, please indicate here.): Laptop with internet connection
 1. Other Comments: This tutorial will be at a basic level; therefore you do not need programming skills to work with SPARQL queries. Understanding which biological questions to ask is more important.
 
-
-https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Chemical_elements_and_their_properties
