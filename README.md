@@ -1,6 +1,6 @@
 # SPARQLTutorialBioSB2019
-Setup for the proposed BioSb2019 tutorial on SPARQL.
-BioSb [website](https://www.biosb.nl/2018/12/biosb-2019-call-for-breakout-sessions/) with more info. Deadline: 14th of January.
+Setup for the proposed BioSB 2019 tutorial on SPARQL.
+BioSB [website](https://www.biosb.nl/2018/12/biosb-2019-call-for-breakout-sessions/) with more info. Deadline: 14th of January.
 
 Required info:
 1. Your name (and names of potential co-organizers)
