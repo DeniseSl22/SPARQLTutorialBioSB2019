@@ -12,7 +12,7 @@ The workshop consists out of different sections:
 * 30 minuten: Introduction to RDF and SPARQL ([presentation 1](Link to presentation1))
 * 20 minuten: [Gene variants in Wikidata](Assignments/assignment1.md)
    * [Understanding the Basics:](Assignments/assignment1.md#What-goes-Where)
-   * [execute the query and retain results:](Assignments/assignment1.md#Run-and-Save)
+   * [Execute the query and retain results:](Assignments/assignment1.md#Run-and-Save)
    * [Expand and change Query:](Assignments/assignment1.md#Change-is-Coming)
 * 20 minuten: [Drug Targets in Wikidata](assignment2.md)
    * [A more complicated query:](Assignments/assignment2.md#step-by-step)
