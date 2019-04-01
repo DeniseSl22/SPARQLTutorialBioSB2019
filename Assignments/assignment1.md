@@ -16,7 +16,7 @@ This element starts with the word SELECT, and is then followed by two words with
 SELECT ?geneLabel ?variantLabel
 ```
 
-SELECT is used to indicate with variables from the (to follow) SPARQL query you want to visualise as a result (in other words: which variables we need to answer our biological question). In this example, the name(s) of the gene(s) predicting a positive prognosis in colorectal cancer (?geneLabel), and the name of the variant belonging to this gene (?variantLabel).
+SELECT is used to indicate with variables from the (to follow) SPARQL query you want to visualise as a result (in other words: which variables we need to answer our biological question). In this example, the name(s) of the gene(s) predicting a positive prognosis in colorectal cancer (?geneLabel), and the name of the variant(s) belonging to this gene/these genes (?variantLabel).
 
 The second element we encouter, is the _query pattern_, which starts with the word WHERE, with the query itself enclosed in curly brackets: {} .
 
