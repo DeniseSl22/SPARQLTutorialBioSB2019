@@ -35,7 +35,7 @@ WHERE
 
 Within these brackets, the data from an RDF is connected to variable names. We already encoutered two variable names, ?geneLabel and ?variantLabel (indicated by the questionmark). These variables can have any name you see fit. 
 
-**Question1:** Which other variable names are present in the following SPARQL query? (Answers can be found [here](/Answers/AnswersAssignment1.md)).
+**Question1:** Which other variable names are present in the following query? (Answers can be found [here](/Answers/AnswersAssignment1.md)).
 
 ```sparql 
 { 
@@ -47,7 +47,7 @@ Within these brackets, the data from an RDF is connected to variable names. We a
 
 #### Query Details
 
-In between the curly brackets, we can see three lines to describe the query we want to execute:
+In between the curly brackets in the query above, we can see three lines to describe the query we want to execute:
 1. VALUES ?disease {wd:Q188874}
 1. ?variant wdt:P3358 ?disease ; # P3358 Positive prognostic predictor
 1. wdt:P3433 ?gene . # P3433 biological variant of
