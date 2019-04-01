@@ -122,7 +122,9 @@ We will now look how to run this query on the data from Wikidata, and how we can
 
 ## Run and Save
 
-ipse lorum
+Click on [this link](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer) to go to the example page of Wikidata. Below the Query titled "Which variant of which gene predicts a positive prognosis in colorectal cancer", click on the "Try it" button, which will open the following page:
+
+![Wikidata SPARQL Enpoint](Images/WikidaatSPARQL_endpoint.JPG)
 
 ## Change is Coming 
 
