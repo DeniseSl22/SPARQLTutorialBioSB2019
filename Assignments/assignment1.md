@@ -7,7 +7,7 @@ During this assignment, we will have a closer look at an example SPARQL query of
 
 A SPARQL query consist out of several elements, which can be considered as building blocks. 
 We will use the following [example](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer), which is part of the example page of SPARQL queries for Wikidata. 
-We will start exploring the exampled called **"Which variant of which gene predicts a positive prognosis in colorectal cancer"**.
+We will exploring the exampled called **"Which variant of which gene predicts a positive prognosis in colorectal cancer"** in more detail below.
 
 The first element we encouter, is the so-called _result clause_, which identifies what information to return from the query. 
 This element starts with the word SELECT, and then two words with a questionmark in front of them:
