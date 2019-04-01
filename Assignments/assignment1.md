@@ -132,7 +132,7 @@ This will reveal the results of the query in a panel below the query editor:
 
 ![results query 1](/Images/Results_Query1_wikidata.JPG)
 
-there are several options to work with the results of your query. To save your data, click on the Download button (red arrow in image below), and select the format you want to work with (CSV, TSV, JSON, HTML, SVG-image). To get a weblink to your results, click on the Link button (green arrow in image below). Last, there are also several code examples available (blue arrow in the image below), which could help construct a script to automate (several) queries, or combine the results of multiple queries in a workflow. Examples are available for: R, Python, Ruby, Perl, Java, JavaScript and many others!
+There are several options to work with the results of your query. To save your data, click on the Download button (red arrow in image below), and select the format you want to work with (CSV, TSV, JSON, HTML, SVG-image). To get a weblink to your results, click on the Link button (green arrow in image below). Last, there are also several code examples available (blue arrow in the image below), which could help construct a script to automate (several) queries, or combine the results of multiple queries in a workflow. Examples are available for: R, Python, Ruby, Perl, Java, JavaScript and many others!
 
 ![results query 1 Download](/Images/Results_Query1_wikidata_Download.jpg)
 
