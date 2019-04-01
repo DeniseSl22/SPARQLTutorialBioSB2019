@@ -77,7 +77,7 @@ wdt:P3433 ?gene .
 }
 ```
 Even though this line does not directly look like a triplet (since there are only two element), it is read as a triplet.
-A point '.' at the end of a triplet really notes the end, while a semicolon ';' notes that another triplet will follow, where the _subject_ may be ommited from writing. Therefore, we need to look back at line 2, to find out which _subject_ is belonging to the triplet in line 3:
+A point '.' at the end of a triplet really notes the end, while a semicolon ';' notes that another triplet will follow, where the _subject_ may be ommited from writing. Therefore, we need to look back at line 2, to find out which _subject_ is belonging to the triplet in line 3: ?variant. This line of the SPARQL query is therefore read as:
 
 ```sparql 
 {
