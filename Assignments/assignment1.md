@@ -114,6 +114,7 @@ WHERE
 We wanted an answer for the following question: "Which variant of which gene predicts a positive prognosis in colorectal cancer".
 
 **Question 2A:** Which item in the SPARQL query corresponds to the disease(s) being queried? 
+
 **Question 2B:** Which item in the SPARQL query adds a name to the results?
 
 (Answers can be found [here](/Answers/AnswersAssignment1.md)). 
