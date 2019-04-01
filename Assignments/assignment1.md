@@ -9,7 +9,7 @@ A SPARQL query consist out of several elements, which can be considered as build
 We will use the following [example](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer), which is part of the example page of SPARQL queries for Wikidata. 
 We will exploring the exampled called **"Which variant of which gene predicts a positive prognosis in colorectal cancer"** in more detail below.
 
-### First element
+### First element: SELECT
 
 The first element we encouter in this example, is the so-called _result clause_, which identifies what information to return from the query. 
 This element starts with the word SELECT, and is then followed by two words with a questionmark in front of them:
@@ -20,7 +20,7 @@ SELECT ?geneLabel ?variantLabel
 
 SELECT is used to indicate with variables from the (to follow) SPARQL query you want to visualise as a result (in other words: which variables we need to answer our biological question). In this example, the name(s) of the gene(s) predicting a positive prognosis in colorectal cancer (?geneLabel), and the name of the variant(s) belonging to this gene/these genes (?variantLabel).
 
-### Second element
+### Second element: WHERE
 
 The second element we encouter, is the _query pattern_, which starts with the word WHERE, with the query itself enclosed in curly brackets: {} .
 
@@ -33,16 +33,25 @@ WHERE
 
 #### Variable Names
 
-Within these brackets, the data from an RDF is connected to variable names. We already encoutered two variable names, ?geneLabel and ?variantLabel (indicated by the questionmark). These variables can have any name you see fit. Try to find out which other variable names are present in the following SPARQL query (answers can be found [here](/Answers/AnswersAssignment1.md)).
+Within these brackets, the data from an RDF is connected to variable names. We already encoutered two variable names, ?geneLabel and ?variantLabel (indicated by the questionmark). These variables can have any name you see fit. 
+
+**Question1:** Which other variable names are present in the following SPARQL query? (Answers can be found [here](/Answers/AnswersAssignment1.md)).
 
 ```sparql 
 { 
 	VALUES ?disease {wd:Q188874}
     ?variant wdt:P3358 ?disease ; # P3358 Positive prognostic predictor
           wdt:P3433 ?gene . # P3433 biological variant of
-	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
 }
 ```
+### Third element: SERVICE
+
+Not that the ?geneLabel and ?variantLabel are not written down in the query, however the variables ?gene and ?variant are. This is possible with the last part of the query, the SERVICE element. By typing the word "Label" (including the capital!) behind the name of a variable, we can obtain the name of that variable, in stead of the identifier used by the RDF. A name makes much more sense to us humans, and allows us to interpret the results.
+
+```sparql 
+{ 
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
 
 ## Run and Save
 
