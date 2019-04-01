@@ -141,7 +141,7 @@ We will now make some changes to this query, to understand the structure of SPAR
 ## Change is Coming 
 
 ### More diseases:
-We have now limited ourselves to only one disease, colorectal cancer. If we would like to add another disease, such as "breast cancer" (Q128581), we would need to change only one line in our query:
+We have now limited ourselves to only one disease, colorectal cancer. If we would like to add another disease, such as "breast cancer" (Q128581), we would need to the VALUES line in our query (original below):
 
 ```sparql 
 { 
