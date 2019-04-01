@@ -149,7 +149,7 @@ We have now limited ourselves to only one disease, colorectal cancer. If we woul
 }
 ```
 
-By adding the identifier (Q128581) for the Wikidata entry "called breast cancer" to the VALUES element, we can expand our qeury to include two diseases. Change the line depicted above in the SPARQL endpoint to the following and click the blue run button again:
+By adding the identifier (Q128581) for the Wikidata entry "called breast cancer" to the VALUES element, we can expand our query to include two diseases. Change the line depicted above in the SPARQL endpoint to the following and click the blue run button again:
 
 ```sparql 
 { 
