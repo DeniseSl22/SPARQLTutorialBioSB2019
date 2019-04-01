@@ -53,7 +53,7 @@ In between the curly brackets in the query above, we can see three lines to desc
 1. wdt:P3433 ?gene . # P3433 biological variant of
 
 ##### Line 1
-The first line starts with VALUES; this allows you to queries multiple items, specified in the data block between the brackets (separated with spaces). The variable after VALUES (in this case ?disease) will be completed with the items in the data block. In this case, we are only interested in "colorectal cancer", with 'Q188874' being the identifier of the entry in Wikidata (these always start with a Q) for **Colon Cancer**. To explain to which database this identifier belongs, we add the 'wd:' before the number of the identifier.
+The first line starts with VALUES; this allows you to queries multiple items, specified in the data block between the brackets at the end of this line. Multiple items should be separated with spaces. The variable after VALUES (in this case ?disease) will be completed with the items in the data block. In this case, we are only interested in "colorectal cancer", with 'Q188874' being the identifier of the entry in Wikidata (these always start with a Q) for **Colon Cancer**. To explain to which database this identifier belongs, we add the 'wd:' before the number of the identifier.
 
 ##### Line 2
 The second line consists of two main parts, the left part is related to the query (which ends with a semicolon ; ), the right is a comment, to explain what the line does (starting with a hash #). The left part is formed in the triplet structure (which we previously encountered in the presentation):
