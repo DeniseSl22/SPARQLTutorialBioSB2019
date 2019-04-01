@@ -9,6 +9,8 @@ A SPARQL query consist out of several elements, which can be considered as build
 We will use the following [example](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer), which is part of the example page of SPARQL queries for Wikidata. 
 We will exploring the exampled called **"Which variant of which gene predicts a positive prognosis in colorectal cancer"** in more detail below.
 
+### First element
+
 The first element we encouter in this example, is the so-called _result clause_, which identifies what information to return from the query. 
 This element starts with the word SELECT, and is then followed by two words with a questionmark in front of them:
 
@@ -17,6 +19,8 @@ SELECT ?geneLabel ?variantLabel
 ```
 
 SELECT is used to indicate with variables from the (to follow) SPARQL query you want to visualise as a result (in other words: which variables we need to answer our biological question). In this example, the name(s) of the gene(s) predicting a positive prognosis in colorectal cancer (?geneLabel), and the name of the variant(s) belonging to this gene/these genes (?variantLabel).
+
+### Second element
 
 The second element we encouter, is the _query pattern_, which starts with the word WHERE, with the query itself enclosed in curly brackets: {} .
 
@@ -27,7 +31,9 @@ WHERE
 }
 ```
 
-Within these brackets, the data from an RDF is connected to variable names. We already encoutered two variable names, ?geneLabel and ?variantLabel (indicated by the questionmark). These variables can have any name you see fit. Try to find out which other variable names are present in the following SPARQL query (answers can be found here).
+#### Variable Names
+
+Within these brackets, the data from an RDF is connected to variable names. We already encoutered two variable names, ?geneLabel and ?variantLabel (indicated by the questionmark). These variables can have any name you see fit. Try to find out which other variable names are present in the following SPARQL query (answers can be found [here](Answers/AnswersAssignment1.md)).
 
 ```sparql 
 { 
