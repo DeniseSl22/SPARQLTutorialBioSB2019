@@ -11,8 +11,14 @@ There are three variables written down in the query:
 
 ### Full query
 
-**Question2A:**
+**Question 2A:**
 The VALUES element: VALUES ?disease {wd:Q188874}
 
-**Question2B:**
+**Question 2B:**
 The SERVICE element: SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+
+## Change is Coming 
+
+### More diseases:
+**Question 3:** 
+VALUES ?disease {wd:Q188874 wd:Q128581 wd:Q18556832}
