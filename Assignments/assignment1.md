@@ -159,7 +159,7 @@ By adding the identifier (Q128581) for the Wikidata entry "called breast cancer"
 
 You should now see more results, compared to our previous endeavour.
 
-**Question 3:** How will the line above look, when we also want to add stomach carninoma (Q18556832) to our list?
+**Question 3:** How will the line above look, when we also want to add stomach carcinoma (Q18556832) to our list?
 
 (Answers can be found [here](/Answers/AnswersAssignment1.md)). 
 
