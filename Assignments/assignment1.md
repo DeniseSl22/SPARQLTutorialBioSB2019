@@ -33,7 +33,7 @@ WHERE
 
 #### Variable Names
 
-Within these brackets, the data from an RDF is connected to variable names. We already encoutered two variable names, ?geneLabel and ?variantLabel (indicated by the questionmark). These variables can have any name you see fit. Try to find out which other variable names are present in the following SPARQL query (answers can be found [here](Answers/AnswersAssignment1.md)).
+Within these brackets, the data from an RDF is connected to variable names. We already encoutered two variable names, ?geneLabel and ?variantLabel (indicated by the questionmark). These variables can have any name you see fit. Try to find out which other variable names are present in the following SPARQL query (answers can be found [here](/Answers/AnswersAssignment1.md)).
 
 ```sparql 
 { 
