@@ -22,3 +22,7 @@ The SERVICE element: SERVICE wikibase:label { bd:serviceParam wikibase:language 
 ### More diseases:
 **Question 3:** 
 VALUES ?disease {wd:Q188874 wd:Q128581 wd:Q18556832}
+
+### Which diseases?
+**Question 4:** 
+SELECT ?geneLabel ?variantLabel ?diseaseLabel
