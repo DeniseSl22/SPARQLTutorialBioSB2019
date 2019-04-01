@@ -10,7 +10,7 @@ We will use the following [example](https://www.wikidata.org/wiki/Wikidata:SPARQ
 We will exploring the exampled called **"Which variant of which gene predicts a positive prognosis in colorectal cancer"** in more detail below.
 
 The first element we encouter in this example, is the so-called _result clause_, which identifies what information to return from the query. 
-This element starts with the word SELECT, and then two words with a questionmark in front of them:
+This element starts with the word SELECT, and is then followed by two words with a questionmark in front of them:
 
 ```sparql 
 SELECT ?geneLabel ?variantLabel
