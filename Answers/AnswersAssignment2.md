@@ -11,6 +11,6 @@ With this data visualisation option, one can only visualise the results of 4 var
 
 **Question 1B:** What would change to the visualisation, if you switch the place of the variables ?geneLabel and ?biological_processLabel ?
 
-This would switch the data on the verticalaxis, with the data depicted by the colour codes. Choosing which result is display in which column has an effect on the interpretability of your data plot.
+This would switch the data on the vertical axis, with the data depicted by the colour codes (see example below). Choosing which result is display in which column has an effect on the interpretability of your data plot. Colour coding the different GO-terms related to biological processes, makes more sense then colour coding the different genes.
 
 ![Answer Q1B](/Images/Scatter_chart_visualisation_switched_variables_example2.jpg)
