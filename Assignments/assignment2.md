@@ -5,7 +5,7 @@ During this assignment, we will investigate another example SPARQL query of Wiki
 
 ## Step by Step
 
-We will use the following [example](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Find_drugs_for_cancers_that_target_genes_related_to_cell_proliferation), which makes use of Gene Ontology terms in Wikidata and drug information.
+We will use the following [example](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Find_drugs_for_cancers_that_target_genes_related_to_cell_proliferation), which makes use of Gene Ontology terms in Wikidata and drug information. There are lots of comments written before the actual query starts (which we will ignore for now).
 
 ### New building blocks
 The complete query is depicted below, and has one new building block, called LIMIT. This is a so-called _solution modifier_, which limits the number of rows returned from a query. In the example below, we will recieve a maximum of 1000 rows as a result.
