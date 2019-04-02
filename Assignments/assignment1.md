@@ -35,7 +35,7 @@ WHERE
 
 Within these brackets, the data from an RDF is connected to variable names. We already encoutered two variable names, ?geneLabel and ?variantLabel (indicated by the questionmark). These variables can have any name you see fit. 
 
-**Question1:** Which other variable names are present in the following query? (Answers can be found [here](/Answers/AnswersAssignment1.md)).
+**Question1:** Which other variable names are present in the following query? (Answers can be found [here](../Answers/AnswersAssignment1.md)).
 
 ```sparql 
 { 
@@ -117,7 +117,7 @@ We wanted an answer for the following question: "Which variant of which gene pre
 
 **Question 2B:** Which item in the SPARQL query adds a name to the results?
 
-(Answers can be found [here](/Answers/AnswersAssignment1.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
 
 We will now look how to run this query on the data from Wikidata, and how we can save the results from that query.
 
@@ -125,16 +125,16 @@ We will now look how to run this query on the data from Wikidata, and how we can
 
 Click on [this link](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer) to go to the example page of Wikidata. Below the Query titled "Which variant of which gene predicts a positive prognosis in colorectal cancer", click on the "Try it" button, which will open the following page:
 
-![Wikidata SPARQL Endpoint](/Images/WikidaatSPARQL_endpoint.JPG)
+![Wikidata SPARQL Endpoint](../Images/WikidaatSPARQL_endpoint.JPG)
 
 Welcome to the SPARQL Endpoint of Wikidata! Excecute the query by clicking on the blue play button.
 This will reveal the results of the query in a panel below the query editor:
 
-![results query 1](/Images/Results_Query1_wikidata.JPG)
+![results query 1](../Images/Results_Query1_wikidata.JPG)
 
 There are several options to work with the results of your query. To save your data, click on the Download button (red arrow in image below), and select the format you want to work with (CSV, TSV, JSON, HTML, SVG-image). To get a weblink to your results, click on the Link button (green arrow in image below). Last, there are also several code examples available (blue arrow in the image below), which could help construct a script to automate (several) queries, or combine the results of multiple queries in a workflow. Examples are available for: R, Python, Ruby, Perl, Java, JavaScript and many others!
 
-![results query 1 Download](/Images/Results_Query1_wikidata_Download.jpg)
+![results query 1 Download](../Images/Results_Query1_wikidata_Download.jpg)
 
 We will now make some changes to this query, to understand the structure of SPARQL even better.
 
@@ -161,7 +161,7 @@ You should now see more results, compared to our previous endeavour.
 
 **Question 3:** How will the line above look, when we also want to add stomach carcinoma (Q18556832) to our list?
 
-(Answers can be found [here](/Answers/AnswersAssignment1.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
 
 ### Which diseases?
 Since we are obtaining more results if we add more disease to our query, it would be great if we know to which disease which variant is related. In order to obtain the disease in the results, we should change the _result clause_ section of our SPARQL query:
@@ -174,7 +174,7 @@ Click the play button again; there should now be three columns in your results p
 
 **Question 4:** How will the line above look, when we want to see the name of the disease in our results panel?
 
-(Answers can be found [here](/Answers/AnswersAssignment1.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
 
 ### Easier querying: Adding diseases with entry search function
 Finding the identifiers for each entry you are interested in, can be done very easily with the entry search function. If we would like to add the disease "ovarian cancer" to our list of interested disease, we could do the follwing:
@@ -183,10 +183,10 @@ Finding the identifiers for each entry you are interested in, can be done very e
 1. Type 'space', and then 'wd:' .
 1. Now hit Ctrl and the spacebar on your keyboard simultaneously (Windows, for Apple: CMD in stead of Ctrl).
 This should open up the entry search field of Wikidata (see image below).
-![Search Entry query 1](/Images/Search_Entry_Wikidata.jpg)
+![Search Entry query 1](../Images/Search_Entry_Wikidata.jpg)
 
 1. Type the words 'ovarian cancer' in the search field, which should trigger a search in all entries in Wikidata (see image below).
-![Search Entry query 1](/Images/Search_Entry_Wikidata_Ovarian_Cancer.jpg)
+![Search Entry query 1](../Images/Search_Entry_Wikidata_Ovarian_Cancer.jpg)
 
 1. Click on the entry with identifier Q172341; this adds the identifier to your list of VALUES.
 1. Run your query again.
@@ -213,12 +213,12 @@ SELECT ?geneLabel ?variantLabel ?diseaseLabel ?image
 2. Click on the play button... We do not see the images directly, we do get a link to the images in a Table. If we want to actually see the images, we need to change the visualisation options of the SPARQL endpoint. 
 3. Directly under the Run button, there is an option called 'Table". Click on this option, and select the option "Image Grid":
 
-![Image Grid query 1](/Images/Image_grid_Wikidata.jpg)
+![Image Grid query 1](../Images/Image_grid_Wikidata.jpg)
 
 Now, the gene in Wikidata which have an image connected to them, are displayed.
 
-![Image example query 1](/Images/Images_genes_Wikidata.JPG)
+![Image example query 1](../Images/Images_genes_Wikidata.JPG)
 
 ## Next assignments:
 
-You can now either continue to [Assignment 2](/Assignments/assignment2.md), where we will discuss another query, or work on some additional assignments related to the query from Assignment 1.
+You can now either continue to [Assignment 2](../Assignments/assignment2.md), where we will discuss another query, or work on some additional assignments related to the query from Assignment 1.
