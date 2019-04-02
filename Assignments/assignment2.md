@@ -73,19 +73,9 @@ The following graph should now appear (click on on of the coloured circles in th
 
 (Answers can be found [here](/Answers/AnswersAssignment2.md)). 
 
-#### Counting Drugs per Diseases
 
-1. Change the _result clause_ to the following line:
-```SPARQL
-SELECT DISTINCT ?drugLabel ?geneLabel ?biological_processLabel (COUNT (?drug) as ?drugcount)  ?diseaseLabel
-```
-3. Press run, and see what happens. 
-![Wikidata Error](/Images/WD_badAggregate.JPG)
+## Changing the question
 
-You will see an error occuring, because there is an item missing from this query. In this case, we added an _Aggregate Function_ called COUNT, which can calculate a single value from a set of results. We want to count how often a drug is occuring in our results, regardless of the disease or gene it is working on. In order to do so, we need to add one more line, just above the LIMIT section, like the example below:
-```SPARQL
-}
-GROUP BY ?drugLabel ?geneLabel ?biological_processLabel  ?diseaseLabel
-LIMIT 1000
-```
+In the previous exercises, we were making (small) adjustments, to understand the structure of a SPARQL query (better). Now, we will focus on adapting the query to answer aditional questions.
 
+### 
