@@ -71,3 +71,4 @@ You will see an error occuring, because there is an item missing from this query
 GROUP BY ?drugLabel ?geneLabel ?biological_processLabel  ?diseaseLabel
 LIMIT 1000
 ```
+
