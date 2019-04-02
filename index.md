@@ -9,7 +9,7 @@ Program
 
 This workshop consists out of four parts:
 
-* 30 minutes: Introduction to RDF and SPARQL ([presentation](/master/Presentation_introRDF.pdf))
+* 30 minutes: Introduction to RDF and SPARQL ([presentation](master/Presentation_introRDF.pdf))
 
 * 25 minutes: [Gene variants in Wikidata](Assignments/assignment1.md)
    * [Understanding the Basics](Assignments/assignment1.md#What-goes-Where)
@@ -21,6 +21,6 @@ This workshop consists out of four parts:
    * [Answering Biological Questions](Assignments/assignment2.md#changing-the-question)
    
 * 10 minutes: Recap
-   * Other Biological databases with RDF ([presentation](/master/Presentation_introRDF.pdf))
+   * Other Biological databases with RDF ([presentation](master/Presentation_introRDF.pdf))
    * Update your SPARQL query [here](https://github.com/BiGCAT-UM/SPARQLTutorialBioSB2019/tree/master/ParticipantQueries)
 
