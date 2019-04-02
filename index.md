@@ -22,5 +22,5 @@ This workshop consists out of four parts:
    
 * 10 minutes: Recap
    * Other Biological databases with RDF ([presentation](Link to presentation))
-   * Update your SPARQL query [here](link to query file)
+   * Update your SPARQL query [here](https://github.com/BiGCAT-UM/SPARQLTutorialBioSB2019/tree/master/ParticipantQueries)
 
