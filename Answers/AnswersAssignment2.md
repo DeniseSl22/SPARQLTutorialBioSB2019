@@ -19,7 +19,9 @@ This would switch the data on the vertical axis, with the data depicted by the c
 
 ### ?biological_process
 
-Adding a VALUES statement will handle the required GO-terms. Furthermore, a new variable (called ?goterms) should be connected to these values, and should be added to the triplet where ?biological_process is related to the go terms. See the full query below:
+**TIPS:** Adding a VALUES statement will handle the required GO-terms. Furthermore, a new variable (called ?goterms) should be connected to these values, and should be added to the triplet where ?biological_process is related to the go terms. 
+
+See the full query below:
 
 ```SPARQL
 SELECT DISTINCT ?drugLabel ?geneLabel ?biological_processLabel ?diseaseLabel
@@ -47,7 +49,9 @@ LIMIT 1000
 
 ### ?drug structure
 
-Since we only want the InchiKey (a new variable!) when it is available, we will use the OPTIONAL statement. Within this statement, we want to connect the ?drug variable to the inchikey in Wikidata (which is linked with the property wdt:P235). Last, we need to add the new variable to the _results clause_.
+**TIPS:** Since we only want the InchiKey (a new variable!) when it is available, we will use the OPTIONAL statement. Within this statement, we want to connect the ?drug variable to the inchikey in Wikidata (which is linked with the property wdt:P235). Last, we need to add the new variable to the _results clause_.
+
+See the full query below:
 
 ```SPARQL
 SELECT DISTINCT ?drugLabel ?geneLabel ?biological_processLabel ?diseaseLabel ?inchikey
