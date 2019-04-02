@@ -66,6 +66,13 @@ The following graph should now appear (click on on of the coloured circles in th
 
 ![Select Scatter Chart](/Images/Scatter_chart_visualisation_example2.JPG)
 
+
+**Question 1A:** Which variables are depicted in which manner? 
+
+**Question 1B:** What would change to the visualisation, if you switch the place of the variables ?geneLabel and  ?biological_processLabel ?
+
+(Answers can be found [here](/Answers/AnswersAssignment2.md)). 
+
 #### Counting Drugs per Diseases
 
 1. Change the _result clause_ to the following line:
