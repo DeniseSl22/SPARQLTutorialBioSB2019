@@ -9,7 +9,7 @@ Program
 
 This workshop consists out of four parts:
 
-* 30 minutes: Introduction to RDF and SPARQL ([presentation 1](Link to presentation1))
+* 30 minutes: Introduction to RDF and SPARQL ([presentation](Link to presentation))
 
 * 25 minutes: [Gene variants in Wikidata](Assignments/assignment1.md)
    * [Understanding the Basics](Assignments/assignment1.md#What-goes-Where)
@@ -20,7 +20,7 @@ This workshop consists out of four parts:
    * [A more complicated query](Assignments/assignment2.md#step-by-step)
    * [Answering Biological Questions](Assignments/assignment2.md#changing-the-question)
    
-* 10 minutes: [Recap](assignment3.md)
-   * Other Biological databases with RDF ([presentation2](Link to presentation2))
+* 10 minutes: Recap
+   * Other Biological databases with RDF ([presentation](Link to presentation))
    * Update your SPARQL query [here](link to query file)
 
