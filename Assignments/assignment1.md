@@ -218,3 +218,7 @@ SELECT ?geneLabel ?variantLabel ?diseaseLabel ?image
 Now, the gene in Wikidata which have an image connected to them, are displayed.
 
 ![Image example query 1](/Images/Images_genes_Wikidata.JPG)
+
+## Next assignments:
+
+You can now either continue to [Assignment 2](/Assignments/assignment2.md), where we will discuss another query, or work on some additional assignments related to the query from Assignment 1.
