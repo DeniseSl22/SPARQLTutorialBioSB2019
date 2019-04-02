@@ -18,7 +18,7 @@ This workshop consists out of four parts:
    
 * 25 minutes: [Drug Targets in Wikidata](assignment2.md)
    * [A more complicated query](Assignments/assignment2.md#step-by-step)
-   *
+   * [Answering Biological Questions](Assignments/assignment2.md#changing-the-question)
    
 * 10 minutes: [Recap](assignment3.md)
    * Other Biological databases with RDF ([presentation2](Link to presentation2))
