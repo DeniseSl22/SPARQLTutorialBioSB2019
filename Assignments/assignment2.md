@@ -37,7 +37,7 @@ There are other _solution modifiers_ available, such as ORDER BY, which can be u
 #### SELECT DISTINCT
 
 1. Run the query above in the SPARQL endpoint, and look how many results you have.
-1. Change the _result clause_ to the following line, and look at the amount of results.
+1. Change the _result clause_ to the following line, and look at the amount of results:
 
 ```SPARQL
 SELECT DISTINCT ?drugLabel ?geneLabel ?biological_processLabel ?diseaseLabel
