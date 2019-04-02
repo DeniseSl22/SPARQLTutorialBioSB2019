@@ -1,0 +1,7 @@
+```SPARQL
+SELECT ?x
+WHERE
+{
+
+}
+```
