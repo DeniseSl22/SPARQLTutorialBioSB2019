@@ -77,3 +77,35 @@ WHERE {
 }
 LIMIT 1000
 ```
+
+### ?References
+
+**TIPS:** We will first need to uncomment the line related to finding true positives. Second, we need to connect a new variable, ?article, to the ?drug variable. The relationship connecting these is called 'main topic' (wdt:P2176). We also want to order our results based on the name of the drug, for which we can use a ORDER BY statement. Last, we need to add the new variable to the _results clause_.
+
+See the full query below:
+
+```SPARQL
+SELECT DISTINCT ?drugLabel ?geneLabel ?biological_processLabel ?diseaseLabel ?inchikey ?articleLabel
+WHERE {
+  VALUES ?goterms {wd:Q14818032 wd:Q14599311 wd:Q2383867}
+  ?drug wdt:P129 ?gene_product .   # drug interacts with a gene_product
+  OPTIONAL{?drug wdt:P235 ?inchikey} .
+  ?gene wdt:P688 ?gene_product .  # gene_product (usually a protein) is a product of a gene (a region of DNA)
+  ?disease	wdt:P2293 ?gene .    # genetic association between disease and gene
+  ?disease wdt:P279*  wd:Q12078 .  # limit to cancers wd:Q12078 (the * operator runs up a transitive relation..)
+  ?gene_product wdt:P682 ?biological_process . #add information about the GO biological processes that the gene is related to 
+  
+   ?biological_process (wdt:P361|wdt:P279)* ?goterms .  # chain down subclass/part-of
+   #Change the last statement (wd:Q14818032) to limit to genes related to certain biological processes (and their sub-processes):
+  		#cell proliferation wd:Q14818032 (Current example)
+        #apoptosis wd:Q14599311
+       #uncomment the next line to find a subset of the known true positives (there are not a lot of them in here yet; will lead to 4 drugs if biological process is cell proliferation 2018-12-17)
+  ?disease wdt:P2176 ?drug . 	# disease is treated by a drug
+ ?article wdt:P921 ?drug  .
+  	SERVICE wikibase:label {
+        bd:serviceParam wikibase:language "en" .
+	}
+}
+ORDER BY ?drugLabel
+LIMIT 1000
+```
