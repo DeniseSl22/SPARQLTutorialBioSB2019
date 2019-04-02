@@ -14,5 +14,5 @@ Authors:
 * Denise Slenter
 
 
-We would like to acknowledge the material provided at [https://github.com/egonw/fvtworkshop], which has been used to construct this workshop
+We would like to acknowledge the material provided at [https://github.com/egonw/fvtworkshop] by Egon Willighagen, Ruud Steltenpool and Lars Willighagen, which has been used to construct this workshop
 (material is only available in Dutch).
