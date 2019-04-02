@@ -32,12 +32,12 @@ WHERE {
 LIMIT 1000
 ```
 
-There are other _solution modifiers_ available, such as ORDER BY, which can be used to sort the query solutions on the value of one or more variables.
+There are other _solution modifiers_ available, such as ORDER BY, which can be used to sort the query solutions on the value of one or more variables. Adding ORDER BY ?diseaseLabel above the LIMIT line, will sort our results based on the name of the diseases we are retrieving from this query.
 
 #### SELECT DISTINCT
 
-1. Run the query above in the SPARQL endpoint, and look how many results you have.
-1. Change the _result clause_ to the following line, and look at the amount of results:
+1. Run the query above in the SPARQL endpoint, and look up how many results you have.
+1. Change the _result clause_ to the line depicted below, and look at the amount of results:
 
 ```SPARQL
 SELECT DISTINCT ?drugLabel ?geneLabel ?biological_processLabel ?diseaseLabel
@@ -55,9 +55,19 @@ The DISTINCT modifier removes duplicate rows from the query results.
 ```
 You can uncomment by removing the '#' sign, and run the query again.
 
-#### Counting Drugs
+#### Additional visualisations
 
 1. Comment the line related to true positives again.
+1. Change the view from 'Table' to 'Scatter chart':
+
+![Select Scatter Chart](/Images/Scatter_chart_example2.jpg)
+
+The following graph should now appear (click on on of the coloured circles in the graph, to obtain the diseaseLabel):
+
+![Select Scatter Chart](/Images/Scatter_chart_visualisation_example2.JPG)
+
+#### Counting Drugs per Diseases
+
 1. Change the _result clause_ to the following line:
 ```SPARQL
 SELECT DISTINCT ?drugLabel ?geneLabel ?biological_processLabel (COUNT (?drug) as ?drugcount)  ?diseaseLabel
