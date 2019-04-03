@@ -1,4 +1,4 @@
-Assignment 2: Which variant of which gene predicts a positive prognosis in colorectal cancer
+Assignment 2: Find drugs for cancers that target genes related to cell proliferation
 =================
 
 [HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
