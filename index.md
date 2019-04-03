@@ -1,6 +1,8 @@
 SPARQLing Biology; a beginners course.
 =============================================================================================
 
+[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+
 This website includes the workshop material for the [BioSb conference BreakOut Session](https://www.bigcat.unimaas.nl/sparqling-biology-breakout-session-at-biosb-2019/) 
 taking place at the 3th of April 2019 in Lunteren.
 
@@ -16,7 +18,7 @@ This workshop consists out of four parts:
    * [Execute the query and retain results](Assignments/assignment1.md#Run-and-Save)
    * [Expand and change Query](Assignments/assignment1.md#Change-is-Coming)
    
-* 25 minutes: [Drug Targets in Wikidata](assignment2.md)
+* 25 minutes: [Drug Targets in Wikidata](Assignments/assignment2.md)
    * [A more complicated query](Assignments/assignment2.md#step-by-step)
    * [Answering Biological Questions](Assignments/assignment2.md#changing-the-question)
    
