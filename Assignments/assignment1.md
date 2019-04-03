@@ -219,12 +219,35 @@ SELECT ?geneLabel ?variantLabel ?diseaseLabel ?image
 
 ![Image Grid query 1](../Images/Image_grid_Wikidata.jpg)
 
-Now, the gene in Wikidata which have an image connected to them, are displayed.
+Now, the genes in Wikidata which have an image connected to them, are displayed.
 
 ![Image example query 1](../Images/Images_genes_Wikidata.JPG)
 
+If you would like to have images for all the genes you queried, you can add these to Wikidata yourself. Since the data in Wikidata is built by community efforts, everyone can get involved. If you would like to know more about becoming a database editor and/or curator for Wikidata, ask one of the instructors for more information.
+
 ## Next assignments:
 
-You can now either progress to [Assignment 2](../Assignments/assignment2.md), where we will discuss another query in more detail, or stay with the current query to adapt it to your own needs.
+You can now either progress to [Assignment 2](../Assignments/assignment2.md), where we will discuss another query in more detail, or stay with the current query to adapt it to your own needs. Several example questions to work on are given below.
 
 [HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+
+
+### Additional questions Assignment 1:
+
+### ?Negatives
+
+We have only been looking at variant in genes which predict a positive diagnosis. There are also variants known related to a negative diagnosis. Change the query to obtain these variants.
+
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
+
+
+### ?References
+
+Finding literature that is related to genetic variants can be quite tricky in regular search engines. Obtain the names of the articles which describe these variants as "Main topic"(_relationship_). Change the example query to obtain the required results.
+
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
+
+
+### ?MORE biology
+
+You can probably think of some other questions you would like to ask to Wikidata. Try to come up with a expansion of the query we are working on now, or find another example on Wikidata you want to understand and expand (ask your instructors for help if needed).
