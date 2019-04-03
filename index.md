@@ -14,7 +14,7 @@ This workshop consists out of four parts:
 * 30 minutes: Introduction to RDF and SPARQL ([presentation](/Presentation_introRDF.pdf))
 
 * 25 minutes: [Gene variants in Wikidata](Assignments/assignment1.md)
-   * [Understanding the Basics](Assignments/assignment1.md#What goes Where)
+   * [Understanding the Basics](Assignments/assignment1.md#What_goes_Where)
    * [Execute the query and retain results](Assignments/assignment1.md#Run-and-Save)
    * [Expand and change Query](Assignments/assignment1.md#Change-is-Coming)
    
