@@ -153,7 +153,7 @@ We have now limited ourselves to only one disease, colorectal cancer. If we woul
 }
 ```
 
-By adding the identifier (Q128581) for the Wikidata entry "called breast cancer" to the VALUES element, we can expand our query to include two diseases. Change the line depicted above in the SPARQL endpoint to the following and click the blue run button again:
+By adding the identifier (Q128581) for the Wikidata entry called "breast cancer" to the VALUES element, we can expand our query to include two diseases. Change the line depicted above in the SPARQL endpoint to the following and click the blue run button again:
 
 ```sparql 
 { 
@@ -168,7 +168,7 @@ You should now see more results, compared to our previous endeavour.
 (Answers can be found [here](../Answers/AnswersAssignment1.md)). 
 
 ### Which diseases?
-Since we are obtaining more results if we add more disease to our query, it would be great if we know to which disease which variant is related. In order to obtain the disease in the results, we should change the _result clause_ section of our SPARQL query:
+Since we are obtaining more results by adding more diseases to our query, it would be great if we know to which disease which variant is related. In order to obtain the disease in the results, we should change the _result clause_ section of our SPARQL query:
 
 ```sparql 
 SELECT ?geneLabel ?variantLabel ?disease
@@ -176,15 +176,15 @@ SELECT ?geneLabel ?variantLabel ?disease
 
 Click the play button again; there should now be three columns in your results panel... However, the disease column is only giving us the identifier from Wikidata, not the name of the disease.
 
-**Question 4:** How will the line above look, when we want to see the name of the disease in our results panel?
+**Question 4:** How should the line above look, when we want to see the name of the disease in our results panel?
 
 (Answers can be found [here](../Answers/AnswersAssignment1.md)). 
 
 ### Easier querying: Adding diseases with entry search function
-Finding the identifiers for each entry you are interested in, can be done very easily with the entry search function. If we would like to add the disease "ovarian cancer" to our list of interested disease, we could do the follwing:
+Finding the identifiers for each entry you are interested in, can be done very easily with the entry search function. If we would like to add the disease "ovarian cancer" to our list of diseases of interest, we could do the follwing:
 1. In the SPARQL endpoint, find the VALUES line.
 1. Click just before the last curly bracket '}' .
-1. Type 'space', and then 'wd:' .
+1. Type a space ' ', and then 'wd:' .
 1. Now hit Ctrl and the spacebar on your keyboard simultaneously (Windows, for Apple: CMD in stead of Ctrl).
 This should open up the entry search field of Wikidata (see image below).
 ![Search Entry query 1](../Images/Search_Entry_Wikidata.jpg)
