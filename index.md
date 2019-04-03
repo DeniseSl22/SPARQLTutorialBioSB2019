@@ -1,4 +1,4 @@
-SPARQLing Biology; a beginners course.
+SPARQLing Biology: a beginners course.
 =============================================================================================
 
 [HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
