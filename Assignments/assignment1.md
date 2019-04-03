@@ -129,7 +129,9 @@ Click on [this link](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service
 
 ![Wikidata SPARQL Endpoint](../Images/WikidaatSPARQL_endpoint.JPG)
 
-Welcome to the SPARQL Endpoint of Wikidata! Excecute the query by clicking on the blue play button.
+**Welcome to the SPARQL Endpoint of Wikidata!** 
+
+Excecute the query by clicking on the blue play button.
 This will reveal the results of the query in a panel below the query editor:
 
 ![results query 1](../Images/Results_Query1_wikidata.JPG)
