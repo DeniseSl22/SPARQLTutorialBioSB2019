@@ -80,7 +80,7 @@ LIMIT 1000
 
 ### ?References
 
-**TIPS:** We will first need to uncomment the line related to finding true positives. Second, we need to connect a new variable, ?article, to the ?drug variable. The relationship connecting these is called 'main topic' (wdt:P2176). We also want to order our results based on the name of the drug, for which we can use a ORDER BY statement. Last, we need to add the new variable to the _results clause_.
+**TIPS:** We will first need to uncomment the line related to finding true positives. Second, we need to connect a new variable, ?article, to the ?drug variable. The relationship connecting these is called 'main subject' (wdt:P921). We also want to order our results based on the name of the drug, for which we can use a ORDER BY statement. Last, we need to add the new variable to the _results clause_.
 
 See the full query below:
 
