@@ -8,7 +8,7 @@ During this assignment, we will investigate another example SPARQL query of Wiki
 We will use the following [example](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Find_drugs_for_cancers_that_target_genes_related_to_cell_proliferation), which makes use of Gene Ontology terms in Wikidata and drug information. There are lots of comments written before the actual query starts (which we will ignore for now).
 
 ### New building blocks
-The complete query is depicted below, and has one new building block, called LIMIT. This is a so-called _solution modifier_, which limits the number of rows returned from a query. In the example below, we will recieve a maximum of 1000 rows as a result.
+The complete query is depicted below, and has one new building block, called LIMIT (last line of query). This is a so-called _solution modifier_, which limits the number of rows returned from a query. In the example below, we will receive a maximum of 1000 rows as a result.
 
 #### LIMIT
 ```SPARQL
@@ -47,8 +47,9 @@ The DISTINCT modifier removes duplicate rows from the query results.
 
 #### (Un)Comment
 
-1. Comments (depicted with a hash '#') can help explaining the query (not only to others, but also for yourself).
+1. Comments (depicted with a hash '#') can help explaining the query (not only to others, but also to yourself).
 1. Within comments, one can also add additional query options, which has been done in the following lines:
+
 ```SPARQL
   #uncomment the next line to find a subset of the known true positives (there are not a lot of them in here yet; will lead to 4 drugs if biological process is cell proliferation 2018-12-17)
   #?disease wdt:P2176 ?drug . 	# disease is treated by a drug
@@ -57,7 +58,7 @@ You can uncomment by removing the '#' sign, and run the query again.
 
 #### Additional visualisations
 
-1. Comment the line related to true positives again.
+1. Comment the line related to true positives again (from the assignment above).
 1. Change the view from 'Table' to 'Scatter chart':
 
 ![Select Scatter Chart](../Images/Scatter_chart_example2.jpg)
@@ -69,7 +70,7 @@ The following graph should now appear (click on on of the coloured circles in th
 
 **Question 1A:** Which variables are depicted in which manner? 
 
-**Question 1B:** What would change to the visualisation, if you switch the place of the variables ?geneLabel and  ?biological_processLabel ?
+**Question 1B:** What would change to the visualisation, if you switch the place of the variables ?geneLabel and  ?biological_processLabel with one another?
 
 (Answers can be found [here](../Answers/AnswersAssignment2.md)). 
 
@@ -96,3 +97,8 @@ Suppose you want to obtain the chemical structure of the drugs involved as an In
 Since there are only 4 known true positives (see the (Un)Comment section), you want to find out if there are any papers describing these drugs. The results should be ordered based on drugname, and we want to see the article names. Change the example query to obtain the required results.
 
 (Answers can be found [here](../Answers/AnswersAssignment2.md)). 
+
+
+### ?MORE biology
+
+You can probably think of some other questions you would like to ask to Wikidata. Try to come up with a expansion of the query we are working on now, or find another example on Wikidata you want to understand and expand (ask your instructors for help if needed).
