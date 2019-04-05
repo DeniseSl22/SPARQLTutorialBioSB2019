@@ -5,7 +5,7 @@ taking place at the 3th of April 2019 in Lunteren.
 
 Read the workshopmaterial online at [https://bigcat-um.github.io/SPARQLTutorialBioSB2019/]
 
-The material for this workshop is available under [CC-BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode) licence
+The material for this workshop is available under [CC-BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode) licence.
 
 Authors:
 
