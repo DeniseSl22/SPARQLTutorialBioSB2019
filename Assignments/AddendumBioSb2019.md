@@ -2,7 +2,7 @@
 
 Several questions were asked during the workshop. Below, you can find these questions and answers:
 
-**Q1:** Which relationships (aka properties) are part of Wikidata (related to biology/chemistry)?
+**Q1: Which relationships (aka properties) are part of Wikidata (related to biology/chemistry)?**
 
 Expanding a query with relevant information only works, if you know which items are part of the database.
 For biology related properties please visit the [WikiProject on_Molecular_biology](https://www.wikidata.org/wiki/Wikidata:WikiProject_Molecular_biology/Properties).
@@ -28,13 +28,13 @@ We can find more relationships for cocaine, by scrolling down the page:
 Here, we can see that there is also a chemical structure available as an SVG image, and a space filling model image.
 Last, there is also a mass provided in atomic mass units. Both the chemical structure drawing and the mass properties have a reference attached to them. These can be unfolded by clicking on the link. This information gives provenance to the data in Wikidata, and can of course be queried from there with a SPARQL query.
 
-**Q2:** How do I change the language settings of the SPAQRL Endpoint?
+**Q2: How do I change the language settings of the SPAQRL Endpoint?**
 
 Answer: Several participants noticed that their results were displayed in Dutch (Nederlands) when they opened the SPARQL endpoint. This setting can be changed in the top right corner:
 
 ![Pref Language](../Images/Preffered_lanuage-Wikidata.jpg)
 
-**Q3:** How can I obtain the query helper menu?
+**Q3: How can I obtain the query helper menu?**
 
 Answer: On the top left side, click on the blue 'i'. This opens up a separate menu, which helps you to construct queries, and see which properties (aka relationships) you want to query:
 
