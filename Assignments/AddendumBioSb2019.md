@@ -2,14 +2,30 @@
 
 Several questions were asked during the workshop. Below, you can find these questions and answers:
 
+**Q1:** Which relationships (aka properties) are part of Wikidata (related to biology/chemistry)?
 
-**Q1:** How do I change the language settings of the SPAQRL Endpoint?
+Expanding a query with relevant information only works, if you know which items are part of the database.
+For biology related properties please visit the [WikiProject on_Molecular_biology](https://www.wikidata.org/wiki/Wikidata:WikiProject_Molecular_biology/Properties).
+For chemistry related properties please visit the [WikiProject on_Chemistry](https://www.wikidata.org/wiki/Wikidata:WikiProject_Chemistry/Properties).
+
+These are quite long lists however, therefore going to the entry page of a relevant item on Wikidata can also help.
+As an example, we will look at the entry page of [Cocaine](https://www.wikidata.org/wiki/Q41576).
+
+The first statement group (see also presentation, slide 17) gives the main labels for this entry in different language. 
+Various trivial names for this compound are also provided.
+
+The second statement group explains to which group of resources this entry belongs:
+
+![Instance of](../Images/Cocaine_Instance-of.JPG)
+
+
+**Q2:** How do I change the language settings of the SPAQRL Endpoint?
 
 Answer: Several participants noticed that their results were displayed in Dutch (Nederlands) when they opened the SPARQL endpoint. This setting can be changed in the top right corner:
 
 ![Pref Language](../Images/Preffered_lanuage-Wikidata.jpg)
 
-**Q2:** How can I obtain the query helper menu?
+**Q3:** How can I obtain the query helper menu?
 
 Answer: On the top left side, click on the blue 'i'. This opens up a separate menu, which helps you to construct queries, and see which properties (aka relationships) you want to query:
 
