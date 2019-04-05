@@ -99,14 +99,14 @@ Note that the ?geneLabel and ?variantLabel are not written down in the query, ho
 }
 ```
 
-Additional Remark: the the SERVICE clause is not default SPARQL behaviour; it is part of the Wikidata SPARQL structure (like some of the visualisation options you see later on). Therefore, this statement will (most likely) not work when building a query
-in any other database. The actual SPARQL query to retrieve labels without using SERVICE is explained [here](link_addendum)
+Additional Remark: the SERVICE clause is not default SPARQL behaviour; it is part of the Wikidata SPARQL structure (like some of the visualisation options you see later on). Therefore, this statement will (most likely) not work when building a query
+in any other database. The actual SPARQL query to retrieve labels without using SERVICE is explained [here](../Assignments/AddendumBioSb2019.md)
 
 ### Full query
 
 When we combine the three elements above, we get the full query:
 
-```
+```sparql
 SELECT ?geneLabel ?variantLabel
 WHERE
 { 
@@ -116,6 +116,7 @@ WHERE
 	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
 }
 ```
+
 We wanted an answer for the following question: "Which variant of which gene predicts a positive prognosis in colorectal cancer".
 
 **Question 2A:** Which item in the SPARQL query corresponds to the disease(s) being queried? 
