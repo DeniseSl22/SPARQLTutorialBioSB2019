@@ -52,7 +52,7 @@ If you are new to GitHub, please consult the following documentation on getting 
 Please note that we will maintain this project for reflection purposes of participants (or others that are interested).
 New assignments will be created on the [main project](https://github.com/DeniseSl22/SPARQLTutorialBioSB2019). Other SPARQL tutorials given by BiGCaT (Maastricht University) in the future can be found in our [repository list](https://github.com/bigcat-um).
 
-### SERVICE clause additional information:
+**SERVICE clause additional information:**
 
 The SERVICE element is a neat trick build into the SPARQL endpoint of Wikidata.
 The SPARQL way of getting the label of an item, is depicted in the following example"
