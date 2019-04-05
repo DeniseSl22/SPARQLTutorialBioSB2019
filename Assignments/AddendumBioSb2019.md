@@ -11,7 +11,7 @@ For chemistry related properties please visit the [WikiProject on_Chemistry](htt
 These are quite long lists however, therefore going to the entry page of a relevant item on Wikidata can also help.
 As an example, we will look at the entry page of [Cocaine](https://www.wikidata.org/wiki/Q41576).
 
-The first statement group (see also presentation, slide 17) gives the main labels for this entry in different language. 
+The first statement group (see also [presentation](../Presentation_introRDF.pdf), slide 17) gives the main labels for this entry in different language. 
 Various trivial names for this compound are also provided.
 
 The second statement group explains to which group of resources this entry belongs:
@@ -19,7 +19,7 @@ The second statement group explains to which group of resources this entry belon
 ![Instance of](../Images/Cocaine_Instance-of.JPG)
 
 'Cocaine' (object) has been classified to belong to the group of 'chemcial compound'(subject) by the relationship 'instance of'.
-There are more resource groups where cocoaine belongs to, such as 'medication', 'controlled substance' and 'powder'.
+There are more resource groups where cocaine belongs to, such as 'medication', 'controlled substance' and 'powder'.
 
 We can find more relationships for cocaine, by scrolling down the page:
 
