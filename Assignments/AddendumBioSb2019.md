@@ -18,6 +18,15 @@ The second statement group explains to which group of resources this entry belon
 
 ![Instance of](../Images/Cocaine_Instance-of.JPG)
 
+'Cocaine' (object) has been classified to belong to the group of 'chemcial compound'(subject) by the relationship 'instance of'.
+There are more resource groups where cocoaine belongs to, such as 'medication', 'controlled substance' and 'powder'.
+
+We can find more relationships for cocaine, by scrolling down the page:
+
+![More relationships](../Images/Cocaine_other_relationships.JPG)
+
+Here, we can see that there is also a chemical structure available as an SVG image, and a space filling model image.
+Last, there is also a mass provided in atomic mass units. Both the chemical structure drawing and the mass properties have a reference attached to them. These can be unfolded by clicking on the link. This information gives provenance to the data in Wikidata, and can of course be queried from there with a SPARQL query.
 
 **Q2:** How do I change the language settings of the SPAQRL Endpoint?
 
