@@ -26,8 +26,9 @@ This workshop consists out of four parts:
    * Other Biological databases with RDF ([presentation](/Presentation_introRDF.pdf))
    * Update your SPARQL query [here](https://github.com/BiGCAT-UM/SPARQLTutorialBioSB2019/tree/master/ParticipantQueries)
 
-An [addendum](Assignments/AddendumBioSb2019.md) is available, where we added answers to questions asked during the tutorial.
-We also added more information on where to find Biological and Chemical properties (aka relationships) to expand your query.
-Last, we added some more detailed explanation of the SERVICE statement (since this is not directly part of SPARQL, but constructed by Wikidata for easier querying).
+An [addendum](Assignments/AddendumBioSb2019.md) is available, where we added:
+* Answers to questions asked during the tutorial.
+* More information on where to find Biological and Chemical properties (aka relationships) to expand your query.
+* More detailed explanation of the SERVICE statement (since this is not directly part of SPARQL, but constructed by Wikidata for easier querying).
 
 We want to thank all the participants of our workshop, and if you have any more questions and/or comments, feel free to use our [issue tracker](https://github.com/BiGCAT-UM/SPARQLTutorialBioSB2019/issues) (if you are new to GitHub, please follow the instructions in the addendum to create an account and add an issue).
