@@ -2,7 +2,7 @@
 
 This [SPARQLing Biology](index.md) workshop material in such a manner that it can be used in other workshops.
 
-Read the latest version of the workshopmaterial online at [https://DeniseSl22.github.io/SPARQLTutorial/].
+Read the latest version of the workshopmaterial online at [https://DeniseSl22.github.io/SPARQLTutorials/].
 
 The material for this workshop is available under [CC-BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode) licence.
 
