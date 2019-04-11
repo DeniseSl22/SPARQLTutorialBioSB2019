@@ -3,8 +3,10 @@ SPARQLing Biology: a beginners course.
 
 [HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
 
+<--- 
 This website includes the workshop material for the [BioSB conference BreakOut Session](https://www.bigcat.unimaas.nl/sparqling-biology-breakout-session-at-biosb-2019/) 
 taking place at the 3th of April 2019 in Lunteren.
+--->
 
 Program
 ---------
