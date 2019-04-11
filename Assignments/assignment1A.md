@@ -1,7 +1,7 @@
 Assignment 1: Which variant of which gene predicts a positive prognosis in colorectal cancer
 =================
 
-[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+[HOME](https://DeniseSl22.github.io/SPARQLTutorials/)
 
 During this assignment, we will have a closer look at an example SPARQL query of Wikidata, called ["Which variant of which gene predicts a positive prognosis in colorectal cancer"](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer). We will first go through the basics of a SPARQL query. Second, we will find out how to execute the query and retain or share results. Last, we will expand the query and make other (small) changes, to understand the structure of a SPARQL query better, and see what other data is available in Wikidata.
 
@@ -125,6 +125,6 @@ We wanted an answer for the following question: "Which variant of which gene pre
 
 (Answers can be found [here](../Answers/AnswersAssignment1.md)). 
 
-We will now look how to run this query on the data from Wikidata, and how we can save the results from that query.
+We will now look how to run this query on the data from Wikidata, and how we can save the results from that query in the [next exercise](../Assignments/assignment1B.md).
 
-[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+[HOME](https://DeniseSl22.github.io/SPARQLTutorials/)
