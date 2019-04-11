@@ -1,3 +1,5 @@
+[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+
 ## Run and Save
 
 Click on [this link](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer) to go to the example page of Wikidata. Below the Query titled "Which variant of which gene predicts a positive prognosis in colorectal cancer", click on the "Try it" button, which will open the following page:
@@ -16,3 +18,5 @@ There are several options to work with the results of your query. To save your d
 ![results query 1 Download](../Images/Results_Query1_wikidata_Download.jpg)
 
 We will now make some changes to this query, to understand the structure of SPARQL even better.
+
+[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
