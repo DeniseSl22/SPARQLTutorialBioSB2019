@@ -85,7 +85,9 @@ If you would like to have images for all the genes you queried, you can add thes
 
 ## Next assignments:
 
-You can now either progress to [Assignment 2](../Assignments/assignment2.md), where we will discuss another query in more detail, or stay with the current query to adapt it to your own needs. Several example questions to work on are given in this [additional assignment](../Assignments/assignment1D.md).
+To continue, you can do one of the following:
+1. Progress to [Assignment 2](../Assignments/assignment2A.md), where we will discuss another query in more detail
+1. Stay with the current query to adapt it to your own needs. Several example questions to work on are given in this [additional assignment](../Assignments/assignment1D.md).
 
 [HOME](https://DeniseSl22.github.io/SPARQLTutorials/)
 
