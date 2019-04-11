@@ -1,4 +1,4 @@
-[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+[HOME](https://DeniseSl22.github.io/SPARQLTutorials/)
 
 ## Run and Save
 
@@ -17,6 +17,6 @@ There are several options to work with the results of your query. To save your d
 
 ![results query 1 Download](../Images/Results_Query1_wikidata_Download.jpg)
 
-We will now make some changes to this query, to understand the structure of SPARQL even better.
+We will now make some changes to this query, to understand the structure of SPARQL even better, in the [next exercise](../Assignments/assignment1C.md).
 
-[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+[HOME](https://DeniseSl22.github.io/SPARQLTutorials/)
