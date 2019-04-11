@@ -1,5 +1,7 @@
 # SPARQLing Biology: a beginners course.
 
+The BioSb branch will not be updated anymore; please commit to the master branch!
+
 This [SPARQLing Biology](index.md) workshop is part of the [BioSb conference](https://www.bigcat.unimaas.nl/sparqling-biology-breakout-session-at-biosb-2019/) 
 taking place at the 3th of April 2019 in Lunteren.
 
