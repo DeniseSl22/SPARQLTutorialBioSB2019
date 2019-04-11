@@ -3,10 +3,10 @@ SPARQLing Biology: a beginners course.
 
 [HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
 
-<--- 
+<!--- 
 This website includes the workshop material for the [BioSB conference BreakOut Session](https://www.bigcat.unimaas.nl/sparqling-biology-breakout-session-at-biosb-2019/) 
 taking place at the 3th of April 2019 in Lunteren.
---->
+---!>
 
 Program
 ---------
@@ -33,7 +33,7 @@ An [addendum](Assignments/AddendumBioSb2019.md) is available, where we added:
 * More information on where to find Biological and Chemical properties (aka relationships) to expand your query.
 * More detailed explanation of the SERVICE statement (since this is not directly part of SPARQL, but constructed by Wikidata for easier querying).
 
-We want to thank all the participants of our workshop, and if you have any more questions and/or comments, feel free to use our [issue tracker](https://github.com/DeniseSl22/SPARQLTutorials/issues) (if you are new to GitHub, please follow the instructions in the addendum to create an account and add an issue).
+<!--- We want to thank all the participants of our workshop, and if you have any more questions and/or comments, feel free to use our [issue tracker](https://github.com/DeniseSl22/SPARQLTutorials/issues) (if you are new to GitHub, please follow the instructions in the addendum to create an account and add an issue). ---!>
 
 
 The material for this workshop is available under [CC-BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode) licence.
