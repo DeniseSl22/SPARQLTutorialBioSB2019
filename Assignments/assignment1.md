@@ -1,6 +1,8 @@
 Assignment 1: Which variant of which gene predicts a positive prognosis in colorectal cancer
 =================
 
+[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+
 During this assignment, we will have a closer look at an example SPARQL query of Wikidata, called ["Which variant of which gene predicts a positive prognosis in colorectal cancer"](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer). We will first go through the basics of a SPARQL query. Second, we will find out how to execute the query and retain or share results. Last, we will expand the query and make other (small) changes, to understand the structure of a SPARQL query better, and see what other data is available in Wikidata.
 
 ## What goes Where
@@ -35,7 +37,7 @@ WHERE
 
 Within these brackets, the data from an RDF is connected to variable names. We already encoutered two variable names, ?geneLabel and ?variantLabel (indicated by the questionmark). These variables can have any name you see fit. 
 
-**Question1:** Which other variable names are present in the following query? (Answers can be found [here](/Answers/AnswersAssignment1.md)).
+**Question1:** Which other variable names are present in the following query? (Answers can be found [here](../Answers/AnswersAssignment1.md)).
 
 ```sparql 
 { 
@@ -89,7 +91,7 @@ In this case, we are defining how genes are related to the variants in Wikidata.
 
 ### Third element: SERVICE
 
-Not that the ?geneLabel and ?variantLabel are not written down in the query, however the variables ?gene and ?variant are. This is possible with the last part of the query, the SERVICE element. By typing the word "Label" (including the capital!) behind the name of a variable, we can obtain the name of that variable, in stead of the identifier used by the RDF. A name makes much more sense to us humans, and allows us to interpret the results.
+Note that the ?geneLabel and ?variantLabel are not written down in the query, however the variables ?gene and ?variant are. This is possible with the last part of the query, the SERVICE element. By typing the word "Label" (including the capital!) behind the name of a variable, we can obtain the name of that variable, in stead of the identifier used by the RDF. A name makes much more sense to us humans, and allows us to interpret the results.
 
 ```sparql 
 { 
@@ -97,11 +99,14 @@ Not that the ?geneLabel and ?variantLabel are not written down in the query, how
 }
 ```
 
+Additional Remark: the SERVICE clause is not default SPARQL behaviour; it is part of the Wikidata SPARQL structure (like some of the visualisation options you see later on). Therefore, this statement will (most likely) not work when building a query
+in any other database. The actual SPARQL query to retrieve labels without using SERVICE is explained [here](../Assignments/AddendumBioSb2019.md)
+
 ### Full query
 
 When we combine the three elements above, we get the full query:
 
-```
+```sparql
 SELECT ?geneLabel ?variantLabel
 WHERE
 { 
@@ -111,13 +116,14 @@ WHERE
 	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
 }
 ```
+
 We wanted an answer for the following question: "Which variant of which gene predicts a positive prognosis in colorectal cancer".
 
 **Question 2A:** Which item in the SPARQL query corresponds to the disease(s) being queried? 
 
 **Question 2B:** Which item in the SPARQL query adds a name to the results?
 
-(Answers can be found [here](/Answers/AnswersAssignment1.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
 
 We will now look how to run this query on the data from Wikidata, and how we can save the results from that query.
 
@@ -125,23 +131,25 @@ We will now look how to run this query on the data from Wikidata, and how we can
 
 Click on [this link](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Which_variant_of_which_gene_predicts_a_positive_prognosis_in_colorectal_cancer) to go to the example page of Wikidata. Below the Query titled "Which variant of which gene predicts a positive prognosis in colorectal cancer", click on the "Try it" button, which will open the following page:
 
-![Wikidata SPARQL Endpoint](/Images/WikidaatSPARQL_endpoint.JPG)
+![Wikidata SPARQL Endpoint](../Images/WikidaatSPARQL_endpoint.JPG)
 
-Welcome to the SPARQL Endpoint of Wikidata! Excecute the query by clicking on the blue play button.
+**Welcome to the SPARQL Endpoint of Wikidata!** 
+
+Excecute the query by clicking on the blue play button.
 This will reveal the results of the query in a panel below the query editor:
 
-![results query 1](/Images/Results_Query1_wikidata.JPG)
+![results query 1](../Images/Results_Query1_wikidata.JPG)
 
 There are several options to work with the results of your query. To save your data, click on the Download button (red arrow in image below), and select the format you want to work with (CSV, TSV, JSON, HTML, SVG-image). To get a weblink to your results, click on the Link button (green arrow in image below). Last, there are also several code examples available (blue arrow in the image below), which could help construct a script to automate (several) queries, or combine the results of multiple queries in a workflow. Examples are available for: R, Python, Ruby, Perl, Java, JavaScript and many others!
 
-![results query 1 Download](/Images/Results_Query1_wikidata_Download.jpg)
+![results query 1 Download](../Images/Results_Query1_wikidata_Download.jpg)
 
 We will now make some changes to this query, to understand the structure of SPARQL even better.
 
 ## Change is Coming 
 
 ### More diseases:
-We have now limited ourselves to only one disease, colorectal cancer. If we would like to add another disease, such as "breast cancer" (Q128581), we would need to the VALUES line in our query (original below):
+We have now limited ourselves to only one disease, colorectal cancer. If we would like to add another disease, such as "breast cancer" (Q128581), we would need change the VALUES line in our query (original below):
 
 ```sparql 
 { 
@@ -149,7 +157,7 @@ We have now limited ourselves to only one disease, colorectal cancer. If we woul
 }
 ```
 
-By adding the identifier (Q128581) for the Wikidata entry "called breast cancer" to the VALUES element, we can expand our query to include two diseases. Change the line depicted above in the SPARQL endpoint to the following and click the blue run button again:
+By adding the identifier (Q128581) for the Wikidata entry called "breast cancer" to the VALUES element, we can expand our query to include two diseases. Change the line depicted above in the SPARQL endpoint to the following and click the blue run button again:
 
 ```sparql 
 { 
@@ -161,10 +169,10 @@ You should now see more results, compared to our previous endeavour.
 
 **Question 3:** How will the line above look, when we also want to add stomach carcinoma (Q18556832) to our list?
 
-(Answers can be found [here](/Answers/AnswersAssignment1.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
 
 ### Which diseases?
-Since we are obtaining more results if we add more disease to our query, it would be great if we know to which disease which variant is related. In order to obtain the disease in the results, we should change the _result clause_ section of our SPARQL query:
+Since we are obtaining more results by adding more diseases to our query, it would be great if we know to which disease which variant is related. In order to obtain the disease in the results, we should change the _result clause_ section of our SPARQL query:
 
 ```sparql 
 SELECT ?geneLabel ?variantLabel ?disease
@@ -172,21 +180,21 @@ SELECT ?geneLabel ?variantLabel ?disease
 
 Click the play button again; there should now be three columns in your results panel... However, the disease column is only giving us the identifier from Wikidata, not the name of the disease.
 
-**Question 4:** How will the line above look, when we want to see the name of the disease in our results panel?
+**Question 4:** How should the line above look, when we want to see the name of the disease in our results panel?
 
-(Answers can be found [here](/Answers/AnswersAssignment1.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
 
 ### Easier querying: Adding diseases with entry search function
-Finding the identifiers for each entry you are interested in, can be done very easily with the entry search function. If we would like to add the disease "ovarian cancer" to our list of interested disease, we could do the follwing:
+Finding the identifiers for each entry you are interested in, can be done very easily with the entry search function. If we would like to add the disease "ovarian cancer" to our list of diseases of interest, we could do the follwing:
 1. In the SPARQL endpoint, find the VALUES line.
 1. Click just before the last curly bracket '}' .
-1. Type 'space', and then 'wd:' .
+1. Type a space ' ', and then 'wd:' .
 1. Now hit Ctrl and the spacebar on your keyboard simultaneously (Windows, for Apple: CMD in stead of Ctrl).
 This should open up the entry search field of Wikidata (see image below).
-![Search Entry query 1](/Images/Search_Entry_Wikidata.jpg)
+![Search Entry query 1](../Images/Search_Entry_Wikidata.jpg)
 
 1. Type the words 'ovarian cancer' in the search field, which should trigger a search in all entries in Wikidata (see image below).
-![Search Entry query 1](/Images/Search_Entry_Wikidata_Ovarian_Cancer.jpg)
+![Search Entry query 1](../Images/Search_Entry_Wikidata_Ovarian_Cancer.jpg)
 
 1. Click on the entry with identifier Q172341; this adds the identifier to your list of VALUES.
 1. Run your query again.
@@ -213,12 +221,37 @@ SELECT ?geneLabel ?variantLabel ?diseaseLabel ?image
 2. Click on the play button... We do not see the images directly, we do get a link to the images in a Table. If we want to actually see the images, we need to change the visualisation options of the SPARQL endpoint. 
 3. Directly under the Run button, there is an option called 'Table". Click on this option, and select the option "Image Grid":
 
-![Image Grid query 1](/Images/Image_grid_Wikidata.jpg)
+![Image Grid query 1](../Images/Image_grid_Wikidata.jpg)
 
-Now, the gene in Wikidata which have an image connected to them, are displayed.
+Now, the genes in Wikidata which have an image connected to them, are displayed.
 
-![Image example query 1](/Images/Images_genes_Wikidata.JPG)
+![Image example query 1](../Images/Images_genes_Wikidata.JPG)
+
+If you would like to have images for all the genes you queried, you can add these to Wikidata yourself. Since the data in Wikidata is built by community efforts, everyone can get involved. If you would like to know more about becoming a database editor and/or curator for Wikidata, ask one of the instructors for more information.
 
 ## Next assignments:
 
-You can now either continue to [Assignment 2](/Assignments/assignment2.md), where we will discuss another query, or work on some additional assignments related to the query from Assignment 1.
+You can now either progress to [Assignment 2](../Assignments/assignment2.md), where we will discuss another query in more detail, or stay with the current query to adapt it to your own needs. Several example questions to work on are given below.
+
+[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+
+
+### Additional questions Assignment 1:
+
+### ?Negatives
+
+We have only been looking at variant in genes which predict a positive diagnosis. There are also variants known related to a negative diagnosis. Change the query to obtain these variants.
+
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
+
+
+### ?References
+
+Finding literature that is related to genetic variants can be quite tricky in regular search engines. Obtain the names of the articles which describe these variants as "Main topic"(_relationship_). Change the example query to obtain the required results.
+
+(Answers can be found [here](../Answers/AnswersAssignment1.md)). 
+
+
+### ?MORE biology
+
+You can probably think of some other questions you would like to ask to Wikidata. Try to come up with a expansion of the query we are working on now, or find another example on Wikidata you want to understand and expand (ask your instructors for help if needed).

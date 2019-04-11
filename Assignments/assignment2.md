@@ -1,5 +1,7 @@
-Assignment 2: Which variant of which gene predicts a positive prognosis in colorectal cancer
+Assignment 2: Find drugs for cancers that target genes related to cell proliferation
 =================
+
+[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
 
 During this assignment, we will investigate another example SPARQL query of Wikidata, called ["Find drugs for cancers that target genes related to cell proliferation"](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Find_drugs_for_cancers_that_target_genes_related_to_cell_proliferation). We will first go through the basics of a SPARQL query. Second, we will find out how to execute the query and retain or share results. Last, we will expand the query and make other (small) changes, to understand the structure of a SPARQL query better, and see what other data is available in Wikidata.
 
@@ -8,7 +10,7 @@ During this assignment, we will investigate another example SPARQL query of Wiki
 We will use the following [example](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Find_drugs_for_cancers_that_target_genes_related_to_cell_proliferation), which makes use of Gene Ontology terms in Wikidata and drug information. There are lots of comments written before the actual query starts (which we will ignore for now).
 
 ### New building blocks
-The complete query is depicted below, and has one new building block, called LIMIT. This is a so-called _solution modifier_, which limits the number of rows returned from a query. In the example below, we will recieve a maximum of 1000 rows as a result.
+The complete query is depicted below, and has one new building block, called LIMIT (last line of query). This is a so-called _solution modifier_, which limits the number of rows returned from a query. In the example below, we will receive a maximum of 1000 rows as a result.
 
 #### LIMIT
 ```SPARQL
@@ -47,8 +49,9 @@ The DISTINCT modifier removes duplicate rows from the query results.
 
 #### (Un)Comment
 
-1. Comments (depicted with a hash '#') can help explaining the query (not only to others, but also for yourself).
+1. Comments (depicted with a hash '#') can help explaining the query (not only to others, but also to yourself).
 1. Within comments, one can also add additional query options, which has been done in the following lines:
+
 ```SPARQL
   #uncomment the next line to find a subset of the known true positives (there are not a lot of them in here yet; will lead to 4 drugs if biological process is cell proliferation 2018-12-17)
   #?disease wdt:P2176 ?drug . 	# disease is treated by a drug
@@ -57,21 +60,21 @@ You can uncomment by removing the '#' sign, and run the query again.
 
 #### Additional visualisations
 
-1. Comment the line related to true positives again.
+1. Comment the line related to true positives again (from the assignment above).
 1. Change the view from 'Table' to 'Scatter chart':
 
-![Select Scatter Chart](/Images/Scatter_chart_example2.jpg)
+![Select Scatter Chart](../Images/Scatter_chart_example2.jpg)
 
 The following graph should now appear (click on on of the coloured circles in the graph, to obtain the diseaseLabel):
 
-![Select Scatter Chart](/Images/Scatter_chart_visualisation_example2.JPG)
+![Select Scatter Chart](../Images/Scatter_chart_visualisation_example2.JPG)
 
 
 **Question 1A:** Which variables are depicted in which manner? 
 
-**Question 1B:** What would change to the visualisation, if you switch the place of the variables ?geneLabel and  ?biological_processLabel ?
+**Question 1B:** What would change to the visualisation, if you switch the place of the variables ?geneLabel and  ?biological_processLabel with one another?
 
-(Answers can be found [here](/Answers/AnswersAssignment2.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment2.md)). 
 
 
 ## Changing the Question
@@ -82,17 +85,24 @@ In the previous exercises, we were making (small) adjustments, to understand the
 
 Suppose you are interested in not only "cell proliferation" as a GO- term, but you would also want to include genes that are related to 'apoptosis' (wd:Q14599311) and 'cell death' (wd:Q2383867). Change the example query to obtain the required results.
 
-(Answers can be found [here](/Answers/AnswersAssignment2.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment2.md)). 
 
 
 ### ?drug structure
 
 Suppose you want to obtain the chemical structure of the drugs involved as an InChIKey, if these are available in Wikidata. Change the example query to obtain the required results.
 
-(Answers can be found [here](/Answers/AnswersAssignment2.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment2.md)). 
 
 ### ?References
 
 Since there are only 4 known true positives (see the (Un)Comment section), you want to find out if there are any papers describing these drugs. The results should be ordered based on drugname, and we want to see the article names. Change the example query to obtain the required results.
 
-(Answers can be found [here](/Answers/AnswersAssignment2.md)). 
+(Answers can be found [here](../Answers/AnswersAssignment2.md)). 
+
+
+### ?MORE biology
+
+You can probably think of some other questions you would like to ask to Wikidata. Try to come up with a expansion of the query we are working on now, or find another example on Wikidata you want to understand and expand (ask your instructors for help if needed).
+
+[HOME](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
